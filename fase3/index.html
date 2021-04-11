@@ -32,12 +32,45 @@
 								Temas
 							</a>
 							<div class="dropdown-menu" aria-labelledby="menu-categorias">
-								<a href="#" class="dropdown-item">Tema 1</a>
-								<a href="#" class="dropdown-item">Tema 2</a>
-								<a href="#" class="dropdown-item">JS</a>
+								<a href="tema1.html" class="dropdown-item">Etiquetas Semanticas</a>
+								<a href="tema2.html" class="dropdown-item">Glosario de Etiquetas</a>
 							</div>
 						</li>
 					</ul>
+
+					
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Recursos Digitales
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                    <a href="podcast.html" class="dropdown-item">podcasts</a>
+                                    <a href="video.html" class="dropdown-item">Vídeos</a>
+                                </div>
+                            </li>
+                        </ul>
+
+						
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Aprendizaje
+									</a>
+									<div class="dropdown-menu" aria-labelledby="menu-categorias">
+										<a href="#" class="dropdown-item">Sub item 1</a>
+										<a href="#" class="dropdown-item">Sub item 2</a>
+									</div>
+								</li>
+							</ul>
+
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown">
+									<a href="autor.html" class="nav-link">
+										Autor
+									</a>
+								</li>
+							</ul>
 				
 					<form action="" class="form-inline my-2 my-lg-0">
 						<input type="text" class="form-control mr-sm-2" placeholder="Buscar" arial-label="Buscar">
@@ -67,10 +100,13 @@
         </section>
 
 		<p><i>Garro, A. (2018). Semántica | HTML5. arkaitzgarro. <a href="https://www.arkaitzgarro.com/html5/capitulo-2.html">https://www.arkaitzgarro.com/html5/capitulo</a></i></p>
-            <center><img src="" alt=""></center>
-            <center><img src="HTML5-elements.jpg"></center>
-	
-	</main>
+            <center><img src="HTML5-elements.jpg"></center><br>
+
+			<section>
+				<center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=600&height=480&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1559623697532452" width="600" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></center>
+			</section>
+			
+	</main><br>
 	
 	<!-- Footer -->
 <footer class="bg-dark text-center text-white">
@@ -88,22 +124,3 @@
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
-<script>
-
-	function calcular(){
-	//Obtienes el valor
-	var compra = document.getElementById("compra").value;
-
-	var venta= document.getElementById('venta');
-	var ganancia= document.getElementById('ganancia');
-
-	//le descuentas el 8% y lo agregas al HTML
-	var descuento = parseInt(valor)*0.08;
-
-	//agrega los resultados al DOM
-	result.innerHTML = 'Ahorro de: $' + descuento;
-	ganancia.innerHTML =  'Total:     $' + (parseInt(compra)-venta);
-	}
-	
-</script>
