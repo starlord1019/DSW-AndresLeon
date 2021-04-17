@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Etiquetas Semánticas, listas y enlaces</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		body {
+			/*padding-top: 56px;*/
+			/*padding-bottom: 56px;*/
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+			<!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional y podemos encerrar el menu <nav> o incluir el contenedor dentro del <nav> -->
+			<div class="container">
+				<!-- Nos sirve para agregar un logotipo al menu -->
+				<a href="index.html" class="navbar-brand">Inicio</a>
+				
+				<!-- Nos permite usar el componente collapse para dispositivos moviles -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Temas
+							</a>
+							<div class="dropdown-menu" aria-labelledby="menu-categorias">
+								<a href="tema1.html" class="dropdown-item">Etiquetas Semanticas</a>
+								<a href="tema2.html" class="dropdown-item">Glosario de Etiquetas</a>
+							</div>
+						</li>
+					</ul>
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Recursos Digitales
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                <a href="podcast.html" class="dropdown-item">podcasts</a>
+                                <a href="video.html" class="dropdown-item">Vídeos</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Aprendizaje
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                    <a href="#" class="dropdown-item">Sub item 1</a>
+                                    <a href="#" class="dropdown-item">Sub item 2</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a href="autor.html" class="nav-link">
+                                    Autor
+                                </a>
+                            </li>
+                        </ul>
+				
+					<form action="" class="form-inline my-2 my-lg-0">
+						<input type="text" class="form-control mr-sm-2" placeholder="Buscar" arial-label="Buscar">
+						<button class="btn btn-light my-s my-sm-0" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<br><br>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="py-4 border-bottom">
+					<h1 class="text-center" id="util">Etiquetas Semanticas	</h1>
+				</div>
+			</div>
+		</div><br>
+
+		<section> 
+            <h3>¿Qué son etiquetas semánticas?</h3><br>
+            <p> Semántica: Perteneciente o relativo a la significación de las palabras. Esa es la definición de la Real Academia de la Lengua Española y es así de sencillo es entender este tipo de etiquetas del lenguaje HTML: Aquellas que dan un significado a las partes del documento.
+                
+                Por decirlo de otra forma, estamos ante etiquetas que indican qué es el contenido que contienen, en lugar de cómo se debe formatear al mostrar el documento HTML en un cliente web.
+                
+                Para que todas nuestras dudas se despejen, podemos echar mano de un ejemplo. Pensemos en la etiqueta STRONG ¿Qué nos indica? Que un texto debe resaltarse con mayor fuerza con respecto a otros textos que no sean "strong", parecido a lo que nos indica la etiqueta B, que todavía es más concreta, al especificar que un texto debe ser colocado en negrita. Pensemos ahora en una etiqueta DIV, o P. La primera es una división y P es un párrafo. Todo esto no son más que maneras de decirle al navegador cómo debe formatear una página, qué debe separar en un texto, en una división normal, o en un párrafo, etc.
+                
+                Pocas de las etiquetas del lenguaje de marcación anteriores a HTML5 indican al documento el significado de los elementos que contienen. O sea, pocas etiquetas indican qué son y qué función representan en el documento HTML, sino que la mayoría sirven para indicar cómo se deben ver en la página una vez renderizada por el navegador.
+                
+                Pues bien, en HTML5 se han incorporado muchas etiquetas que sirven para indicar qué son y cuál es el significado de los elementos que contienen dentro. Esas son las etiquetas semánticas, que ganan mucha importancia en el marco del HTML y de la composición de un documento web por ayudar a motores de búsqueda como Google a indexar más correctamente los contenidos de un sitio. 
+            </p>
+        </section>
+
+		<p><i>GEtiquetas semánticas del HTML5. (2012, 4 junio). Desarrollo Web. <a href="https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html">https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html</a></i></p>
+            <center><img src="" alt=""></center>
+            <center><img src="semantica-html.gif"></center><br>
+
+            <p>Como vemos, las posibilidades de agrupar, ordenar y colocar estas etiquetas para definir la estructura correría por nuestra cuenta, pudiendo generar distintos tipos de estructuras según las necesidades de cada proyecto. No obstante, siempre hay algunas reglas básicas que sí se deben cumplir, como que las unidades de contenido estén en los ARTICLE o que solo exista un navegador con NAV. En casos comunes, que deseemos tener otros navegadores, podríamos optar por echar mano de otras etiquetas semánticas como MENU, asignando al navegador principal la etiqueta NAV y a otros secundarios el MENU.</p>
+	
+	</main><br>
+	
+	<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	  © 2021 Copyright <br>
+	  <a class="text-white" href="https://mdbootstrap.com/">andres.leon.unillanos@gmail.com | Skype: osseus10 | 10 de abril de 2021</a>
+	</div>
+	<!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
