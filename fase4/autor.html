@@ -10,6 +10,13 @@
 			/*padding-top: 56px;*/
 			/*padding-bottom: 56px;*/
 		}
+
+		.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 6fr 1fr;
+		}
+	
 	</style>
 </head>
 <body>
@@ -90,16 +97,20 @@
 			</div>
 		</div><br>
 
-		<section> 
-    <h3><p>Andrés David León Lozano</p>
-        <p>3197956783 <br>
-        <p>Ingeniería de Sistemas</p>
-        <p>andres.leon.unillanos@gmail.com</p>
-        -------------------------------------------- <br>
-        <p>Skype: osseus10</p>
-  </h3>
-    </section>
-    <center><img src="perfil.jpg" width="500" height="500"></center>
+		<div class="row">
+			<div class="col-sm">
+				<h3><p>Andrés David León Lozano</p>
+					<p>3197956783 <br>
+					<p>Ingeniería de Sistemas</p>
+					<p>andres.leon.unillanos@gmail.com</p>
+					-------------------------------------------- <br>
+					<p>Skype: osseus10</p>
+				  </h3>
+			</div>
+			<div class="col-sm">
+				<img src="perfil.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+			</div>
+		  </div>	
         </article><br>	
 	</main><br>
 	
